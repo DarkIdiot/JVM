@@ -1,5 +1,10 @@
 package com.dark;
 
+/**
+ * volatile 不能代替锁 一般认为volatile 比锁性能好（不绝对）
+ * 
+ * 选择使用volatile的条件是： 语义是否满足应用
+ */
 public class VolatileStopThread extends Thread {
 	private volatile boolean stop = false;
 
